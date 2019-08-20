@@ -22,7 +22,7 @@ namespace MVCCore_WithBugs.Controllers
         public IActionResult Index()
         {
             List<Product> allProducts = ProductDb.GetAllProducts(_context);
-            return View();
+            return View(allProducts);
         }
 
         // GET: Products/Create
